@@ -1,7 +1,7 @@
 let fungsi = function (nama) {
   console.log(nama + " sedang belajar js");
 };
-fungsi("bambang");
+fungsi("bambang"); // nama diisi dengan "bambang"
 
 let contoh = (nama) => {
   console.log(nama + " kesusahan belajar js");
@@ -14,10 +14,10 @@ let tambah = function (a, b) {
 console.log(tambah(2, 3));
 
 let plus = (a, b) => a + b;
-console.log(plus(2, 6));
+console.log(plus(2, 6)); // "a" digantikan dengan 2, "b" digantikan dengan 6, lalu dijumlahkan
 
 let hasil = (a) => a * 3;
-console.log(hasil(4));
+console.log(hasil(4)); //"a" digantikan dengan angka 4, lalu dikali 3
 
 let banyak = () => {
   console.log("halo");
