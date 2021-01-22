@@ -1,0 +1,41 @@
+[
+    {
+        "idmenu": 1,
+        "idkategori": 1,
+        "menu": "YZ 125",
+        "harga": 3000,
+        "warna": [
+            "merah",
+            "kuning",
+            "hijau"
+        ],
+        "stok": true,
+        "keterangan": null
+    },
+    {
+        "idmenu": 2,
+        "idkategori": 1,
+        "menu": "KTM 125",
+        "harga": 4000,
+        "warna": [
+            "merah",
+            "kuning",
+            "hijau"
+        ],
+        "stok": true,
+        "keterangan": null
+    },
+    {
+        "idmenu": 3,
+        "idkategori": 1,
+        "menu": "HUSQ 125",
+        "harga": 4000,
+        "warna": [
+            "merah",
+            "kuning",
+            "hijau"
+        ],
+        "stok": true,
+        "keterangan": null
+    }
+]
