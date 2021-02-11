@@ -13,7 +13,7 @@ function Menu() {
         },
         {
             idmenu: 2,
-            idkategori: 1,
+            idkategori: 2,
             menu: "KTM 125",
             gambar: "trail3.jpg",
             harga: 4000,
@@ -27,7 +27,7 @@ function Menu() {
         },
         {
             idmenu: 47,
-            idkategori: 1,
+            idkategori: 2,
             menu: "HSQ 125",
             gambar: "trail4.jpg",
             harga: 6000,
@@ -37,6 +37,7 @@ function Menu() {
         <div className="App">
             <div>
                 <Tabel menu={menus} titel={titel} />
+                <Tabel menu={menus.filter((data) => (data.idkategori === 1))} titel="Daftar Motor" />
             </div>
         </div>
     );
