@@ -10,7 +10,7 @@ class MenuController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     *  Pepega test
      * @return \Illuminate\Http\Response
      */
     public function index()

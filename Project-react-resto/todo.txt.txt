@@ -1,0 +1,5 @@
+1. inst reactjs
+2. inst react-router-dom
+3. inst axios
+4. inst react-bootstrap
+5. inst react-book-form
