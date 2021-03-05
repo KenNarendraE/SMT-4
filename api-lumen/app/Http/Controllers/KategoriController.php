@@ -34,7 +34,11 @@ class KategoriController extends Controller
 
         $kategori = Kategori::create($request->all());
 
-        return response()->json($kategori);
+        if ($kategori) {
+            return response()->json([
+                'pesan' => 'data sudah disimpan'
+            ]);
+        }
     }
 
     /**
@@ -81,8 +85,12 @@ class KategoriController extends Controller
     public function update(Request $request, $id)
     {
         //
-        Kategori::where('idkategori', $id)->update($request->all());
-        return response()->json("data ter update");
+        $kategori = Kategori::where('idkategori', $id)->update($request->all());
+        if ($kategori) {
+            return response()->json([
+                'pesan' => 'data sudah diubah'
+            ]);
+        }
     }
 
     /**
@@ -93,7 +101,12 @@ class KategoriController extends Controller
      */
     public function destroy($id)
     {
-        Kategori::where('idkategori', $id)->delete();
-        return response()->json("data sudah dihapus");
+        $kategori = Kategori::where('idkategori', $id)->delete();
+
+        if ($kategori) {
+            return response()->json([
+                'pesan' => 'data sudah dihapus'
+            ]);
+        }
     }
 }
