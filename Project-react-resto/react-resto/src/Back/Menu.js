@@ -78,7 +78,7 @@ const Menu = () => {
                             <label htmlFor="kategori" className="form-label">Kategori</label>
                             <select name="idkategori" ref={register} className="form-control">
                                 {
-                                    kategori.map((val, index) => val.idkategori === idkategori ? <option selected value={val.idkategori}>{val.kategori}</option> : <option value={val.idkategori}>{val.kategori}</option>)
+                                    kategori.map((val, index) => val.idkategori === idkategori ? <option key={index} selected value={val.idkategori}>{val.kategori}</option> : <option key={index} value={val.idkategori}>{val.kategori}</option>)
                                 }
                             </select>
                         </div>
