@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const url = "http://localhost:8000/api";
-let token = "6tYLNnPwYbKXRqPESpQtKK6XiSd2iEYz1Tq6E1Sj";
+let token = sessionStorage.getItem('token');
 
 
 export const link = axios.create({
